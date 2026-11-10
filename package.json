@@ -1,21 +1,22 @@
 {
-  "name": "bunvertical",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "dev": "bun --hot src/server/index.ts",
-    "check": "bun check",
-    "build:browser": "bun run scripts/build-for-browser.ts",
-    "build:server": "bun build --target=bun src/server/index.ts --outdir build/server",
-    "build": "bun run build:browser && bun run build:server",
-    "start": "bun run build/server/index.js",
-    "test": "bun test"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^7"
-  }
+   "name": "bunvertical",
+   "module": "index.ts",
+   "type": "module",
+   "version": "0.0.1-DRAFT",
+   "scripts": {
+      "dev": "bun --hot src/server/index.ts --development",
+      "check": "bun check",
+      "build:browser": "bun run scripts/build-for-browser.ts",
+      "build:server": "bun run scripts/build-for-server.ts",
+      "build": "bun run build:browser && bun run build:server",
+      "start": "bun run dist/server/index.js",
+      "test": "bun test"
+   },
+   "devDependencies": {
+      "@types/bun": "latest"
+   },
+   "peerDependencies": {
+      "typescript": "^7"
+   },
+   "author": "nflyr"
 }
