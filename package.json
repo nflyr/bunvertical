@@ -18,5 +18,8 @@
    "peerDependencies": {
       "typescript": "^7"
    },
-   "author": "nflyr"
+   "author": "nflyr",
+   "dependencies": {
+      "postal-mime": "^4.2.1"
+   }
 }
