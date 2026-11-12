@@ -1,10 +1,8 @@
 # Bun vertical
 
-This project contains my opinionated proposal for the structure and tooling to build a Bun server.
+This project contains my opinionated proposal for the structure and tooling to build a Bun application server that allows rendering.
 
-The directory trees below describe the intended organization; future business
-components and pages do not need to exist for the examples to run. The agreed
-build and runtime requirements are recorded in [docs/decisions.md](./docs/decisions.md).
+The ADR decisions for locations, build and runtime requirements are recorded in [docs/decisions.md](./docs/decisions.md).
 
 ## Repository structure and Components
 
@@ -12,7 +10,7 @@ build and runtime requirements are recorded in [docs/decisions.md](./docs/decisi
 
 Root folder: `./src/server/`.
 
-The server runtime contains all the code required to execute the server and provide technical capabilities.
+The server runtime contains all the code required to execute in the server and provide the middleware and technical utility capabilities.
 
 ```
 src/

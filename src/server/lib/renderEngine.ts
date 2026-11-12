@@ -1,5 +1,5 @@
 ///
-/// Component: Library
+/// Component: ssr
 /// Objective: Render templates into HTML documents.
 ///
 
